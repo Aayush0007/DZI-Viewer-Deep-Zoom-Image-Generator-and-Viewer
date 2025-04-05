@@ -3,10 +3,8 @@
 The DZI Viewer project provides a streamlined way to generate and display Deep Zoom Images (DZI) using a containerized environment. This document provides step-by-step instructions to set up, configure, and troubleshoot the project on a fresh system.
 
 ---
-## Video Demo
-<video src="https://raw.githubusercontent.com/saupradhan/privacy-assured-media/main/DZI%20Project.mp4" controls width="600">
-  Sorry, your browser doesn't support embedded videos.
-</video>
+## Project Demo
+Watch the demo video: [Click here to play the DZI Project video](https://raw.githubusercontent.com/Aayush0007/DZI-Viewer-Deep-Zoom-Image-Generator-and-Viewer/main/DZI%20Project.mp4)
 
 ## Table of Contents
 1. [Introduction](#introduction)
