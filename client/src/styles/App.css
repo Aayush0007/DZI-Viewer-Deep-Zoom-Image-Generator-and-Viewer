@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1f1f1f;
+    color: #ffffff;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+  }
+  
+  .container {
+    padding: 20px;
+    margin-top: 60px;
+  }
+  
+  .button {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #1557b7;
+  }
+
+  .login-message-container {
+    margin-top: 80px;
+    text-align: center;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.2); /* Increase opacity */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    position: relative;
+    z-index: 10;
+}
+
+.login-message-container h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff; /* Ensure contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    display: block !important;
+    visibility: visible !important;
+}
+
+
+/* Stylish Title for Deep Zoom Viewer */
+.viewer-title {
+  font-size: 32px;  /* Slightly larger for emphasis */
+  font-weight: bold;
+  color: #1a73e8; /* Bright blue for contrast */
+  text-align: center; /* Aligning to top-right */
+  margin: 20px 40px 10px 0; /* Top-right position */
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2);
+  /* position: relative; 
+  top: 80px; /* Below navbar */
+  right: 40px; /* Right side alignment */
+}

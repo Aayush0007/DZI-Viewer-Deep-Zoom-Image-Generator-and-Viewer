@@ -1,0 +1,38 @@
+.file-list {
+    padding: 20px;
+  }
+  
+  .file-list h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+  }
+  
+  .file-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .file-item {
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .file-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .file-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+  }
+  
+  .file-item p {
+    margin: 10px 0 0;
+    color: #ffffff;
+  }

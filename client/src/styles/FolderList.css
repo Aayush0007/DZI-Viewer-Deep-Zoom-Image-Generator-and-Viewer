@@ -1,0 +1,27 @@
+.folder-list {
+    padding: 20px;
+  }
+  
+  .folder-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .folder-item {
+    background-color: #2d2d2d;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .folder-item:hover {
+    transform: scale(1.05);
+  }
+  
+  .folder-item p {
+    margin: 10px 0 0;
+    color: #ffffff;
+  }

@@ -1,0 +1,59 @@
+services:
+  client:
+    build:
+      context: ./client
+      dockerfile: Dockerfile
+    container_name: client
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./client:/app"
+      - "/app/node_modules"
+
+  server:
+    build:
+      context: ./server
+      dockerfile: Dockerfile
+    container_name: server
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+      - INPUT_DIR=/app/input_images
+      - OUTPUT_DIR=/app/public/images/Images
+      - THUMBNAIL_SIZE=256
+    volumes:
+      - "./server:/app"
+      - "/app/node_modules"
+      - "./server/input_images:/app/input_images"
+      - "./server/public/images/Images:/app/public/images/Images"
+  python:
+    build:
+      context: ./server
+      dockerfile: Dockerfile.dzi-daemon
+    container_name: dzi-daemon
+    volumes:
+      - "./server/input_images:/app/input_images"
+      - "./server/public/images/Images:/app/public/images/Images"
+    environment:
+      - INPUT_DIR=/app/input_images
+      - OUTPUT_DIR=/app/public/images/Images
+      - THUMBNAIL_SIZE=256
+    restart: unless-stopped
+
+
+  postgres:
+    image: postgres:15
+    container_name: postgres
+    restart: always
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSTGRES_DB=users
+    volumes:
+      - pgdata:/var/lib/postgresql/data  
+      - ./init-db:/docker-entrypoint-initdb.d
+volumes:
+  pgdata:  

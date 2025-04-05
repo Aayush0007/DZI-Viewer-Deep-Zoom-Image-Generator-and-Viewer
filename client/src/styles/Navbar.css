@@ -1,0 +1,64 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+  }
+  
+  .logo h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8em;
+    letter-spacing: 2px;
+    margin: 0;
+    color: #1a73e8;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #1a73e8;
+  }
+  
+  .login-btn {
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #1557b7;
+  }
+  
+  .logout-btn {
+    background-color: #dc3545;
+  }
+  
+  .logout-btn:hover {
+    background-color: #bb2d3b;
+  }
